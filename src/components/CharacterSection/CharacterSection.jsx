@@ -1,3 +1,5 @@
+import CharacterGrid from "../CharacterGrid/CharacterGrid";
+
 export default function CharacterSection ({ characters }) {
     return (
         <section className="bg-bg-base py-24 px-6 relative w-full">
@@ -18,7 +20,7 @@ export default function CharacterSection ({ characters }) {
                     </p>
                 </div>
                 <div className="w-full">
-                    {/* INTEGRACIÓN DE LA GRILLA DE PERSONAJES */}
+                    <CharacterGrid characters={characters}/>
                 </div>
             </div>
         </section>
