@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hkVideo from "../../assets/home.mp4";
 
 export default function Home () {
@@ -18,7 +19,7 @@ export default function Home () {
                 </div>
 
                 <p className="text-text-secondary text-sm md:text-base leading-relaxed max-w-xl">
-                    Una enciclopedia dedicada al lore, personajes y misterios del mundo subterráneo creado por Team Cherry. Explorá cada rincón de un reino que se niega a morir.
+                    Una enciclopedia dedicada al lore, personajes y misterios del mundo subterráneo creado por Team Cherry. Explora cada rincón de un reino que se niega a morir.
                 </p>
 
                 <div className="flex items-center gap-3 w-full">
@@ -27,11 +28,11 @@ export default function Home () {
                     <div className="h-px w-16 md:w-24 bg-linear-to-l from-transparent to-accent" />
                 </div>
 
-                <a href="#" className="group relative inline-flex items-center justify-center px-8 py-3 mt-4 font-cinzel text-sm md:text-base tracking-[0.2em] text-text-primary uppercase transition-all duration-500 border border-accent/30 bg-bg-elevated/20 backdrop-blur-sm hover:bg-accent/10 hover:border-accent/80 hover:shadow-accent hover:-translate-y-1 overflow-hidden">
+                <Link to="/contents" className="group relative inline-flex items-center justify-center px-8 py-3 mt-4 font-cinzel text-sm md:text-base tracking-[0.2em] text-text-primary uppercase transition-all duration-500 border border-accent/30 bg-bg-elevated/20 backdrop-blur-sm hover:bg-accent/10 hover:border-accent/80 hover:shadow-accent hover:-translate-y-1 overflow-hidden">
                     <span className="relative z-10 transition-colors duration-300 group-hover:text-white drop-shadow-md">
                         Comienza a explorar...
                     </span>
-                </a>
+                </Link>
             </section>
         </main>
     );
