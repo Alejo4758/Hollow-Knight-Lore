@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CharacterCard from "../CharacterCard/CharacterCard";
 
 export default function CharacterGrid ({ characters }) {
@@ -14,9 +15,9 @@ export default function CharacterGrid ({ characters }) {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full justify-items-center">
             {characters.map ((character) => (
-                <a key={character.id} to={`/character/${character.id}`} className="w-full flex justify-center outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
+                <Link key={character.id} to={`/character/${character.id}`} className="w-full h-full flex justify-center outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
                     <CharacterCard characterData={character}/>
-                </a>
+                </Link>
             ))}
         </div>
     );
